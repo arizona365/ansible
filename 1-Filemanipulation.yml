@@ -4,16 +4,16 @@
   tasks:
   - name: hello file is copied 
     copy:
-      content: "hello from monday evening"
-      dest: /tmp/monday.txt
+      content: "hello from monday evening v2"
+      dest: /tmp/monday3.txt
   - name: hi file is copied 
     copy:
-      content: "hi here"
-      dest: /tmp/monday2.txt
+      content: "hi here v2"
+      dest: /tmp/monday4.txt
   - name: archive hh is create
     archive:
       path:
-      - /tmp/mondat.txt
-      - /tmp/monday2.txt
-      dest: /tmp/hh.zip
+      - /tmp/mondat3.txt
+      - /tmp/monday4.txt
+      dest: /tmp/hh2.zip
       format: zip
