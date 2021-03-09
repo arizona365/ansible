@@ -1,0 +1,19 @@
+- name: playbook for file installation
+  hosts: all
+  become: yes
+  tasks:
+  - name: hello file is copied 
+    copy:
+      content: "hello from monday evening"
+      dest: /tmp/monday.txt
+  - name: hi file is copied 
+    copy:
+      content: "hi here"
+      dest: /tmp/monday2.txt
+  - name: archive hh is create
+    archive:
+      path:
+      - /tmp/mondat.txt
+      - /tmp/monday2.txt
+      dest: /tmp/hh.zip
+      format: zip
