@@ -5,4 +5,4 @@
   tasks:
   - name: debug
     debug:
-      msg: "web host server locations is {{ package_name }}  and {{ name }}"
+      msg: "web host server locations is {{ package_name }}  and {{ destination }} from {{arizona devops}}"
